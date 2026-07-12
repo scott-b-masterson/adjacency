@@ -30,35 +30,6 @@ Everything runs client-side — no build step, no dependencies, no data leaves t
 
 ---
 
-## Run it locally
-
-Just open `index.html` in a browser. (Optionally: `python3 -m http.server` in this folder, then visit `http://localhost:8000`.)
-
-## Deploy on GitHub Pages
-
-1. Create a new repository on GitHub (e.g. `adjacency`). Keep it public.
-2. From this folder:
-   ```bash
-   git init
-   git add .
-   git commit -m "Adjacency — interactive graph ↔ matrix visualizer"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/adjacency.git
-   git push -u origin main
-   ```
-3. On GitHub: **Settings → Pages → Build and deployment** → Source: *Deploy from a branch* → Branch: `main`, folder `/ (root)` → Save.
-4. After ~a minute, the site is live at `https://YOUR-USERNAME.github.io/adjacency/`.
-
-### Custom domain
-
-1. Buy the domain, then in the repo create a file named `CNAME` containing exactly the domain (e.g. `adjacency.app`).
-2. At your DNS provider:
-   - Apex domain (`adjacency.app`): four **A records** → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - `www` subdomain: **CNAME record** → `YOUR-USERNAME.github.io`
-3. In **Settings → Pages**, enter the custom domain and check **Enforce HTTPS** once the certificate is issued (can take up to a day).
-
----
-
 ## Project structure
 
 ```
